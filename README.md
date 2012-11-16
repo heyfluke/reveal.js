@@ -1,3 +1,13 @@
+# Fork from hakimei/reveal.js
+
+## Add slide_editor/slide_editor.htm
+
+I get this editor from http://rvl.io. It's offline.
+
+## add user_index.html and user_contents
+
+It's recommanded to put image under user_contents.
+
 # reveal.js
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
