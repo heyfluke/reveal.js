@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0034)http://www.rvl.io/fluke/test2/edit -->
-<html lang="en" class="loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<html lang="en" class="loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <title>Reveal: Edit</title>
 
     <meta name="description" content="Create and share good looking presentations in a breeze">
@@ -325,6 +325,11 @@ background-color:#AE81FF;
         <div id="toolbar" >
 		</div>
         <div class="options">
+          <button class="positive-button import-deck">Import</button>
+		  <button class="positive-button clean-local">Clean Local</button>
+
+		  <div><hr /></div>
+		  <div class="positive-button save-deck-local disabled">Save Locally</div>
           <!-- div class="positive-button save-deck disabled">Saved</div>
           <div class="positive-button preview-deck disabled" target="_blank" href="#">Preview</div>
 
@@ -332,6 +337,7 @@ background-color:#AE81FF;
 
           <button class="positive-button settings">Settings</button>
           <button class="positive-button download-deck">Export</button>
+		  
           
       </div>
 
@@ -343,26 +349,24 @@ background-color:#AE81FF;
 
         <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
-    <section>
-        <h1>Your title here</h1>
-        <p>Template slide</p>
+ <section>
+  <h1>Your title here</h1>
+  <p>Template slide</p>
 		  <p>
-				<img src="user_contents/sample.gif">&nbsp;</p>
+				<img src="user_contents/sample.gif">
         <p>Esc: toggle global view</p>
         <p>arrows: navigate between slides</p>
-    </section>
-    <section>
-        <h2>Title</h2>
-    </section>
-    <section>
+			</p>
+ </section>
+ <section>
 					<h1>Reveal.js</h1>
 					<h3>HTML Presentations Made Easy</h3>
 					<p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a>
-    </small>
+ </small>
 					</p>
 				</section>
-    <section>
+ <section>
 					<h2>Heads Up</h2>
 					<p>
 						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
@@ -373,7 +377,7 @@ background-color:#AE81FF;
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
-    <section>
+ <section>
 					<section>
 						<h2>Vertical Slides</h2>
 						<p>
@@ -403,25 +407,25 @@ background-color:#AE81FF;
 						</a>
 					</section>
 				</section>
-    <section>
+ <section>
 					<h2>Point of View</h2>
 					<p>
 						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
 					</p>
 				</section>
-    <section>
+ <section>
 					<h2>rvl.io</h2>
 					<p>
 						If you don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
 					</p>
 				</section>
-    <section>
+ <section>
 					<h2>Works in Mobile Safari</h2>
 					<p>
 						Try it out! You can swipe through the slides and pinch your way to the overview.
 					</p>
 				</section>
-    <section>
+ <section>
 					<h2>Marvelous Unordered List</h2>
 					<ul>
 						<li>No order here</li>
@@ -430,7 +434,7 @@ background-color:#AE81FF;
 						<li>Or here</li>
 					</ul>
 				</section>
-    <section>
+ <section>
 					<h2>Fantastic Ordered List</h2>
 					<ol>
 						<li>One is smaller than...</li>
@@ -438,21 +442,21 @@ background-color:#AE81FF;
 						<li>Three!</li>
 					</ol>
 				</section>
-    <section>
-					<script type="text/template">
-						## Markdown support
+ <section>
+  <script type="text/template">
+    ## Markdown support
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+    For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
 
-							<section data-markdown>
-							  ## Markdown support
+        <section data-markdown>
+          ## Markdown support
 
-							  For those of you who like that sort of thing.
-							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-							</section>
-					</script>
-				</section>
-    <section>
+          For those of you who like that sort of thing.
+          Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+        </section>
+</script>
+ </section>
+ <section>
 					<h2>Transition Styles</h2>
 					<p>
 						You can select from different transitions, like: <br>
@@ -465,7 +469,7 @@ background-color:#AE81FF;
 						<a href="?#/transitions">Default</a>
 					</p>
 				</section>
-    <section>
+ <section>
 					<h2>Themes</h2>
 					<p>
 						Reveal.js comes with a few themes built in: <br>
@@ -482,7 +486,7 @@ background-color:#AE81FF;
 						</small>
 					</p>
 				</section>
-    <section>
+ <section>
 					<section>
 						<h2>Global State</h2>
 						<p>
@@ -502,24 +506,12 @@ background-color:#AE81FF;
 					</section>
 					<section>
 						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
+						<a href="#" class="image navigate-next enabled">
 							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
 						</a>
 					</section>
 				</section>
-    <section>
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre>
-    <code contenteditable="" style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code>
-    </pre>
-				</section>
-    <section>
+ <section>
 					<h2>Clever Quotes</h2>
 					<p>
 						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
@@ -530,43 +522,21 @@ background-color:#AE81FF;
 						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
 					</blockquote>
 				</section>
-    <section>
-					<h2>Pretty Code</h2>
-					<pre>
-    <code contenteditable="">
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code>
-    </pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-    <section>
+ <section>
 					<h2>Intergalactic Interconnections</h2>
 					<p>
 						You can link between slides internally,
 						<a href="#/2/3">like this</a>.
 					</p>
 				</section>
-    <section>
+ <section>
 					<section>
 						<h2>Fragmented Views</h2>
 						<p>Hit the next arrow...</p>
 						<p class="fragment">... to step through ...</p>
 						<ol>
 							<li class="fragment">
-    <code>any type</code>
+ <code>any type</code>
 </li>
 							<li class="fragment">
 <em>of view</em>
@@ -601,7 +571,7 @@ function linkify( selector ) {
 <section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen=""> </iframe>
+					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="">    </iframe>
 					
 				</section>
 <section>
@@ -647,6 +617,10 @@ function linkify( selector ) {
 					<h3>BY Hakim El Hattab / hakim.se</h3>
 				</section>
 </div>
+<!-- end of slides -->
+
+
+
 
 
       <div class="progress" style="display: block;"><span></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
@@ -671,6 +645,17 @@ function linkify( selector ) {
       <textarea></textarea>
       <footer>
         <button class="positive-button done">Done</button>
+      </footer>
+    </div>
+	<div class="import">
+      <h3>Import Presentation</h3>
+      <ol>
+        <li>enter html in the format like those export by this program.</li>
+      </ol>
+      <textarea id="txt"></textarea>
+      <footer>
+		<button class="negative-button done">Cancel</button>
+        <button class="positive-button done">Replace</button>
       </footer>
     </div>
         <div class="edit-html">
@@ -708,7 +693,7 @@ function linkify( selector ) {
     </div>
       </div>
 
-      <script src="./assets/jquery.min.js"></script><script src="./assets/head.min.js"></script><script src="./assets/reveal.min.js"></script><script src="./assets/rvl.min.js"></script><script type="text/javascript">
+      <script src="./assets/jquery.min.js"></script><script src="./assets/head.min.js"></script><script src="../js/reveal.js"></script><!-- script src="./assets/reveal.min.js"></script --><script src="./assets/rvl.min.js"></script><script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34185193-1']);
       _gaq.push(['_setDomainName', 'rvl.io']);
