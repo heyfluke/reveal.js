@@ -11,6 +11,8 @@ It's recommanded to put image under user_contents.
 ## add "Save Locally" function which save current content to localStorage
 ### known issue: some css can be changed by js dynamically, in this situation we cannot judge if the content is changed by localtorage == current_html.
 
+## add "import" function .
+
 # reveal.js
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
